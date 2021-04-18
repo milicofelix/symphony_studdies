@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Exemplo de mudança de titulo {% endblock %}
+
+{% block body %}
+    <h1>Clubes</h1>
+    <ul>
+        {% for club in clubes %}
+            <li>{{ club.portoAlegre }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
